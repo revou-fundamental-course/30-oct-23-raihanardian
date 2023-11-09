@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BMI CALCULATOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+  <!-- SCRIPT JS PERHItuNGAN -->
+  
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- END -->
+
+</head>
+<body>
+
+<div class="container">
+  <h2>BMI CALCULATOR</h2>
+  <form action="" id="my-form">
+    <div class="form-group col-lg-3">
+      <label for="email">Berat Badan (Kg):</label>
+      <input type="text" class="form-control" id="berat_bdn" placeholder="Input..." name="berat_bdn" required>
+    </div>
+    <div class="form-group col-lg-2">
+      <label for="pwd">Usia (Tahun):</label>
+      <input type="number" class="form-control" id="usia" placeholder="Input..." name="usia">
+    </div>
+    <div class="form-group col-lg-3">
+        <label for="tinggi_bdn">Tinggi Badan (cm):</label>
+        <input type="text" class="form-control" id="tinggi_bdn" placeholder="Input...." name="tinggi_bdn" required>
+    </div>
+    <div class="form-group col-lg-3">
+        <label for="pwd">Jenis Kelamin:</label><br>
+        <input type="checkbox" name="jk" class="checkoption" value="Laki - Laki" id="jk"> Laki - Laki</label>
+        <input type="checkbox" name="jk" class="checkoption" id="jk" value="Perempuan"> Perempuan</label>
+    </div>
+    <div class="form-group col-lg-12">
+        <button type="submit" class="btn btn-primary col-lg-2" style="margin-right: 20px;">Hitung</button>
+        <button type="button" onClick="refresh(this)" class="btn btn-primary col-lg-2" id="btn_cancel">Reset</button>
+    </div>
+  </form>
+</div>
+
+<h1 class="line"></h1>
+<div class="container" id="hasil_container">
+
+    <br>
+    <h2>HASIL PERHITUNGAN BMI</h2>
+    <b id="berat_text" style="margin-left: 10px;"> </b> <b id="usia_text"> </b> <b id="tinggi_text"> </b> <b id="jk_text"> </b>
+
+    <div class="flex-container">
+    
+    <div>
+        <small id="desc_bmi"></small><br>
+        <b id="hasil_bmi"></b><br>
+        <small id="indikator_bmi"></small>
+    </div>
+
+    <div>
+        <b><small id="desc_penyakit" style="font-size: 16px;text-align: left;"></small></b><br>
+        <div id="hasil_penyakit" style="font-size: 14px;text-align: left;padding-left: 25px;"></div>
+    </div>
+
+    
+
+   </div>
+</div>
+
+<div class="container" id="hasil_container_btn">
+    <a href="https://www.halodoc.com/" target="_blank" ><button type="button" class="btn btn-success col-lg-3" style="margin-left: 10px;">Konsultasi Dengan Ahli Gizi</button></a>
+</div>
+
+    
+</body>
+</html>
